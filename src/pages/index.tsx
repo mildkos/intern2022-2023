@@ -1,10 +1,9 @@
 import { NextPage } from "next"
-import React, { useEffect, useRef, useState } from "react"
+import React, { useEffect } from "react"
 import { NextRouter, useRouter } from "next/router"
 import Link from "next/link"
 import { useAppDispatch, useAppSelector } from "@stores/hooks"
 import { getProfile, SIGNOUT } from "@stores/slices/profileSlices"
-import { getMaterialTypes } from "src/services/naka.service"
 
 const HomePage: NextPage = () => {
   const router: NextRouter = useRouter()
