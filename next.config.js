@@ -5,10 +5,10 @@ const nextConfig = {
     remotePatterns: [
       {
         protocol: "https",
-        hostname: "**.example.com",
-      },
-    ],
-  },
-};
+        hostname: "**.example.com"
+      }
+    ]
+  }
+}
 
-module.exports = nextConfig;
+module.exports = nextConfig
