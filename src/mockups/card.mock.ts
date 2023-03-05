@@ -65,9 +65,9 @@ const CardData = {
   club: "New York City F.C."
 }
 
-// _cNameList = cardNameList
-const getNameFromArr = (_cNameList: Array<any>) => {
-  return _cNameList[0]
+// _nameList = cardNameList
+const getNameFromArr = (_nameList: Array<any>) => {
+  return _nameList[0]
 }
 
 // _cData = CardData

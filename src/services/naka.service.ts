@@ -1,11 +1,5 @@
 import service from "@configs/interceptor"
 
-interface IMaterialServ {
-  status: boolean
-  data: any
-  message: string
-}
-
 export const getMaterialTypes = () => {
   return service
     .get("/market-place/materials")

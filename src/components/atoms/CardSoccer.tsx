@@ -1,7 +1,6 @@
 import Image from "next/image"
 import React, { memo } from "react"
-
-export type TPosition = "fw" | "mf" | "df" | "gk"
+import { TPosition } from "src/interfaces/player.interface"
 
 interface IProps {
   img: string

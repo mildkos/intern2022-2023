@@ -1,6 +1,4 @@
 import React, { memo } from "react"
-import imageThirteen from "@public/thirteen.svg"
-import CardSoccer from "@components/molecules/CardSoccer"
 
 interface IProps {
   dataList: JSX.Element | JSX.Element[]
