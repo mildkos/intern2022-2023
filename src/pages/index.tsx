@@ -4,6 +4,7 @@ import { NextRouter, useRouter } from "next/router"
 import Link from "next/link"
 import { useAppDispatch, useAppSelector } from "@stores/hooks"
 import { getProfile, SIGNOUT } from "@stores/slices/profileSlices"
+import { getMaterialTypes } from "src/services/naka.service"
 
 const HomePage: NextPage = () => {
   const router: NextRouter = useRouter()
@@ -15,8 +16,13 @@ const HomePage: NextPage = () => {
     dispatch(SIGNOUT())
   }
 
+  const fetchMaterial = async () => {
+    const { data, status, message } = await getMaterialTypes()
+  }
+
   useEffect(() => {
     alert("Welcome to Home Page")
+    // fetchMaterial()
   }, [])
 
   return (
