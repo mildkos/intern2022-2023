@@ -55,7 +55,19 @@ function getAge(x: number): number {
   return 60
 }
 
-const CardData = {
+interface ICardData {
+  cardName: string
+  price: number
+  power: number
+  isActive: boolean
+  position: {
+    short: string
+    full: string
+  }
+  club: string
+}
+
+const CardData: ICardData = {
   cardName: "Tony",
   price: 500,
   power: 300,
@@ -77,7 +89,19 @@ const getNameByCardData = (_cData: any) => {
   return _cData.cardName
 }
 
-export const CardMockData = [
+interface ICardMockData {
+  cardName: string
+  price: number
+  power: number
+  isActive: boolean
+  position: {
+    short: string
+    full: string
+  }
+  club: string
+}
+
+export const CardMockData: ICardMockData[] = [
   {
     cardName: "Tony",
     price: 500,
